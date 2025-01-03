@@ -13,7 +13,7 @@ export default function Error({
 		// Log the error to an error reporting service
 		Sentry.captureException(error);
 
-		console.error(error);
+		console.error(error, "SARA");
 	}, [error]);
 
 	return (
